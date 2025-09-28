@@ -52,13 +52,16 @@
 <!-- Content appended here -->
 <div class="franklin-content">
 <h1 id="website_using_franklin_and_github_pages"><a href="#website_using_franklin_and_github_pages" class="header-anchor">Website using Franklin and github pages</a></h1>
-<h2 id="github"><a href="#github" class="header-anchor">Github</a></h2>
-<p>Create a repo for a github pages, in my case it should be named <code>seluj01.github.io</code>. Clone it locally.</p>
+<h2 id="github"><a href="#github" class="header-anchor">GitHub</a></h2>
+<p>Create a repo for a GitHub Pages, in my case it should be named <code>seluj01.github.io</code>. Clone it locally.</p>
 <h2 id="franklinjl"><a href="#franklinjl" class="header-anchor">Franklin.jl</a></h2>
-<p>Create a new website using Franklin.jl. To build and display it,</p>
+<p>Create a new website using Franklin.jl. To locally build and display it,</p>
 <pre><code class="language-bash">julia -e &#39;using Franklin; serve&#40;&#41;&#39;</code></pre>
 <p>To full rebuild,</p>
 <pre><code class="language-bash">julia -e &#39;using Franklin; optimize&#40;&#41;&#39;</code></pre>
+<p>move everything to the cloned repo, folders <code>_site</code>, etc. and file <code>index.md</code> should be at the root of the repo.</p>
+<h2 id="github_action"><a href="#github_action" class="header-anchor">GitHub Action</a></h2>
+<p>Ensure the site is built using a GitHub Action from file in <code>.github/workflows</code> and not by the default Jekyll build from GitHub.<br/> On the repo in <code>settings &gt; Pages &gt; Build and deployment</code> select <code>Source: Deploy from a branch</code> and <code>Branch: gh-pages</code> with <code>/&#40;root&#41;</code>. The branch <code>gh-pages</code> should be created by the GitHub Action.</p>
 <div class="page-foot">
     <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Jules Matz. Last modified: September 28, 2025.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
