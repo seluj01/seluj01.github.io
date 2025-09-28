@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://seluj01.github.io/Notes/SetupWebsite/index.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://seluj01.github.io/Notes/python/index.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://seluj01.github.io/Notes/index.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://seluj01.github.io/Notes/website/index.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/libs/highlight/styles/github.min.css">
+   
+
+  <link href="/css/franklin.css" rel="stylesheet">
+<link href="/css/vela.css" rel="stylesheet">
+<script src="/libs/vela/jquery.min.js"></script>
+
+<link rel="icon" href="/assets/favicon.png">
+
+
+  <title>Franklin Example | Vela</title>
+</head>
+<body>
+<div class="main-nav slideout-menu slideout-menu-left" id="menu">
+  <div class="flex-container">
+    <span class="sidebar-brand">
+      <h3 style='font-size: 25px'>Vela Template</h3>
+    </span>
+  </div> <!-- class="flex-container" -->
+
+  <nav class="sidebar-nav">
+    <ul class="metismenu"  id="metismenu" >
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/python/">Python</a></li>
+      <li><a href="" class="has-arrow">Topic</a>
+        <ul>
+          <li><a href="/python/">More Python</a></li>
+        </ul>
+      </li>
+      <li><a href="/website/"> Website</a></li>
+    </ul>
+  </nav>
+</div> <!-- main nav menu -->
+
+<main id="panel" class="slidout-panel slideout-panel-left">
+  <div class="toggle-button hamburger hamburger--spin">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+  </div>
+  <h1 class="page title">Python</h1>
+  <hr>
+
+
+
+<!-- Content appended here -->
+<div class="franklin-content">
+<h1 id="python"><a href="#python" class="header-anchor">Python</a></h1>
+<hr />
+<h2 id="containers"><a href="#containers" class="header-anchor">Containers</a></h2>
+<p><strong>Lists</strong> store <em>ordered</em> &#40;accessed by index&#41; and <em>mutable</em> &#40;can be changed&#41; items</p>
+<pre><code class="language-Python">my_list &#61; &#91;1, 2, 2, &quot;a&quot;, &quot;word&quot;&#93;</code></pre>
+<p><strong>Tuples</strong> store <em>ordered</em> and <em>immutable</em> &#40;cannot be modified&#41; items, faster than lists</p>
+<pre><code class="language-Python">my_tuple &#61; &#40;1, 2, 2, &quot;a&quot;, &quot;word&quot;&#41;</code></pre>
+<p><strong>Sets</strong> store <em>unordered unique</em> &#40;no duplicates&#41; items</p>
+<pre><code class="language-Python">my_set &#61; &#123;1, 2, &quot;a&quot;, &quot;word&quot;&#125;</code></pre>
+<p><strong>Dictionaries</strong> store <em>key-value pairs</em> &#40;keys are unique and immutable&#41;</p>
+<pre><code class="language-Python">my_dict &#61; &#123;&quot;name&quot;  : &quot;design_01&quot;,
+           &quot;point&quot; : np.array&#40;&#91;1, 4, 3&#93;&#41;,
+           &quot;status&quot;: 0&#125;
+my_dict&#91;&quot;status&quot;&#93; &#61; 1</code></pre>
+<p><strong>NumPy Arrays</strong> store numerical &#40;homogeneous&#41; data efficiently</p>
+<pre><code class="language-julia">my_array &#61; np.array&#40;&#91;1, 2, 3&#93;, &#91;5, 6, 7&#93;&#41;</code></pre>
+<h2 id="copying_containers"><a href="#copying_containers" class="header-anchor">Copying containers</a></h2>
+<p><strong>Assignement operator</strong> for containers <code>a &#61; b</code> creates a <em>reference</em> &#40;pointer&#41; to the object <code>b</code> in memory. Modifying values in <code>a</code> modifies <code>b</code>.   <strong>Shallow copy</strong> <code>a &#61; b.copy&#40;&#41;</code> for standard containers or <code>np.copy&#40;b&#41;</code> for numpy arrays. Does not copy nested objects &#40;they are still referenced to by pointers&#41;. Faster than deep copy.   <strong>Deep copy</strong> using <code>import copy</code> and then <code>a&#61;copy.deepcopy&#40;b&#41;</code> to entirely copy objects with its nested objects.</p>
+<h2 id="loop_over_containers"><a href="#loop_over_containers" class="header-anchor">Loop over containers</a></h2>
+<pre><code class="language-Python"># get each item
+for item in my_list_tuple_set_nparray:
+    print&#40;item&#41;
+
+# get each dictionary items
+for key, value in my_dict.items&#40;&#41;:
+    print&#40;f&quot;&#123;key&#125;: &#123;value&#125;&quot;&#41;
+
+# loop over multiple related containers
+for name, length in zip&#40;list_names, list_lengths&#41;:
+    print&#40;f&quot;length of &#123;name&#125; is &#123;length&#125;m&quot;&#41;
+
+# get each index and item
+for index, value in enumerate&#40;my_list_tuple_set_nparray&#41;:
+    print&#40;f&quot;Index &#123;index&#125;: &#123;value&#125;&quot;&#41;</code></pre>
+<div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Jules Matz. Last modified: September 28, 2025.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+  </main> <!-- end of id=main -->
+  <script src="/libs/vela/metisMenu.min.js"></script>
+  <script src="/libs/vela/slideout.min.js"></script>
+  
+  
+    <script src="/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
+
+  
+</body>
+</html>

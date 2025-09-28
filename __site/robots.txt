@@ -1,0 +1,4 @@
+Sitemap: https://seluj01.github.io/Notes/sitemap.xml
+
+User-agent: *
+Disallow:
