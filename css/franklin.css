@@ -303,6 +303,7 @@ code {
 /* font-size: 90%; } */
 
 .hljs {
+  background-color: #00000005;
   font-size: var(--small);
   line-height: 1.35em;
   border-radius: 10px;

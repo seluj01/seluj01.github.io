@@ -1,0 +1,1 @@
+"/home/jules/Documents/seluj01.github.io/__site/assets/franklin/code/output/gaussian.svg"
